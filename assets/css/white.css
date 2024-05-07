@@ -1,0 +1,345 @@
+/* ====== GOOGLE FONT SET UP */
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* ==== BASE STYLE ==== */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+/* ====== VERIABLE THAT ARE GOING TO BE RE-USED ===== */
+:root{
+  --site-background-color:#fff;
+  --site-button-color:#a77c53;
+  --site-border-color:#eeeeee;
+  --site-accent-color:#FFF4EC;
+  --site-button-hover:#F2AC22;
+  --title-color:#000;
+  --text-color-white:#fff;
+  --body-font-color:#656565;
+  --section-color:#FFF4EC;
+  --button-text-color:#fff;
+  --section-alt-color:#e0e0e0;
+  --nav-color:#fff;
+  --nav-font-color:#000;
+  --nav-hover-color:#818181;
+  --header-height: 3.5rem; 
+
+  /* ==== FONT AND TYPOGRAPHY ==== */
+  --heading-font:"Literata", Sans-serif;
+  --body-font:"Roboto", sans-serif;
+  --heading-1-size:36px;
+  --heading-1-lineheight:1.2em;
+  --heading-2-lineheight:1.3em;
+  --heading-3-lineheight:1.3em;
+  --heading-4-lineheight:1.4em;
+  --heading-5-lineheight:1.4em;
+  --heading-6-lineheight:1.4em;
+  --heading-2-size:28px;
+  --heading-3-size:24px;
+  --heading-4-size:20px;
+  --heading-5-size:18px;
+  --heading-6-size:16px;
+  --body-font-size:16px;
+  --body-line-height:1.6em;
+  --heading-font-weight:600;
+
+   /* ==== FONT WEIGHT ==== */
+   --font-regular: 400;
+   --font-medium: 500;
+   --font-semi-bold: 600;
+   --font-bold: 700;
+   --font-black: 800;
+
+   /* ==== Z INDEX ==== */
+  --z-tooltip:10;
+  --z-fixed: 100;
+
+
+
+
+}
+
+
+.button{
+  background-color: var(--site-button-color);
+  color: var(--button-text-color);
+  font-family: var(--heading-font);
+  font-size: var(--heading-4-size);
+  padding: 17px 42px 17px 42px;
+  text-transform: uppercase;
+  font-weight: var(--font-semi-bold);
+  border-radius: 0;
+  border: 1px dashed white;
+  
+}
+.button:hover{
+  background-color: var(--site-button-hover);
+  color: var(--title-color);
+  border: 1px dashed black;
+}
+input,
+button {
+  border: none;
+  outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  line-height:100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container_alt{
+  max-width: 1320px;
+  margin-inline: 1.5rem;
+}
+.section-primary {
+  padding-block: 5rem 1rem;
+  background-color: var(--section-color);
+}
+.section-alt {
+  padding-block: 5rem 1rem;
+  background-color: var(--section-alt-color);
+}
+.main {
+  overflow: hidden;
+}
+
+body{
+  text-align: center;
+  font-family: var(--body-font);
+  font-size: var(--body-font-size);
+  
+}
+
+
+/* /navbar */
+nav {
+  background-color: var(--nav-color);
+ 
+  border: 1px solid var(--site-border-color);
+ 
+}
+nav ul .nav-item .nav-link{
+  color: var(--nav-hover-color);
+  font-family: var(--heading-font);
+  font-size: var(--heading-5-size);
+  font-weight: var(--font-semi-bold);
+  
+}
+nav ul .nav-item .nav-link:hover{
+  color: var(--nav-font-color);
+}
+
+/* top bar book now section */
+.top_bar_book_now_sect{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  
+  position: fixed;
+  right:10px;
+  top:130px;
+}
+.nav-call-sect h5{
+  font-family: var(--heading-font);
+  font-size: var(--heading-5-size);
+  color: var(--nav-font-color);
+  padding-right: 10px;
+}
+.nav-call-sect span{
+  color: var(--text-color-white);
+}
+.Top_bar_book_now_button{
+  background-color: var(--site-button-color);
+  padding: 10px;
+}
+.Top_bar_book_now_button:hover{
+  background: var(--site-button-hover);
+}
+@media only screen and (max-width: 600px) {
+  .top_bar_book_now_sect{
+    display: none;
+  }
+}
+
+/* theme toggle icon */
+.toggle_icon{
+  position: fixed;
+  right: 10px;
+  top: 80px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 200px) {
+  .toggle_icon{
+    display: none;
+  }
+}
+/* hero section */
+.main_hero{
+  background-image: url('/assets/img/images/garden landscape-01.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* height: 100vh;
+  width: 100vw; */
+ 
+  
+}
+.hero_intro{
+  background-color: #00000088;
+  max-width: 100vw;
+  height: 800px;
+}
+.site_heading_text h4, h1{
+  font-family: var(--heading-font);
+  color: var(--text-color-white);
+
+}
+.site_heading_text h4{
+  font-size: var(--heading-5-size);
+  padding-top: 10rem;
+}
+.site_heading_text h1{
+  font-size: 72px;
+  font-family: "Literata";
+  font-weight: 700;
+  
+}
+.site_heading_text a{
+  color: var(--text-color-white);
+  padding-top: 20px;
+
+}
+@media screen and (max-width:420px) {
+  .site_heading_text h1{
+    font-size: 40px;
+  }
+  .hero_intro{
+  background-color: #00000088;
+  max-width: 100vw;
+  height: 500px;
+  }
+  
+}
+
+/* room search form table */
+.room_search_form{
+  display: flex;
+  justify-content: center;
+  background-color: var(--site-background-color);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.257);
+  padding: 16px;
+  position: relative;
+  top: -30px;
+
+}
+.check-in{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column;
+  margin-inline: 16px;
+}
+.check-in h5{
+  font-size: var(--heading-6-size);
+  font-family: var(--heading-font);
+  margin-bottom: 10px;
+}
+.check-in span{
+  color: red;
+}
+.date_from_to{
+  font-family: var(--heading-font);
+}
+.dropdown{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column;
+  margin-inline: 16px;
+  
+}
+.dropdown .btn i{
+  align-self: flex-end;
+}
+.dropdown label h5{
+  font-size: var(--heading-6-size);
+  font-family: var(--heading-font);
+  margin-bottom: 10px;
+}
+.dropdown .btn{
+
+ align-self: flex-end;
+}
+@media screen and (max-width:995px) {
+  .room_search_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    background-color: var(--site-background-color);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.257);
+    padding: 16px;
+    position: relative;
+    top: -30px;
+  
+  }
+  .check-in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin-bottom: 16px;
+    padding: 16px;
+    border-bottom: 1px solid var(--site-border-color);
+  }
+  .dropdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin-bottom: 16px;
+    padding: 16px;
+    border-bottom: 1px solid var(--site-border-color);
+    
+    
+  }
+  
+  
+}
+@media screen and (max-width:320px) {
+  .check-availibility_button .button{
+    width: 150px;
+    font-size: small;
+    text-align: center;
+    padding: 10px;
+  }
+  
+}
