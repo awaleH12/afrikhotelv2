@@ -48,7 +48,11 @@ html {
   --heading-6-size:16px;
   --body-font-size:16px;
   --body-line-height:1.6em;
-  --heading-font-weight:600;
+  --heading-font-weight:700;
+  --title-display-font-size:60px;
+  --title-display-font-color:#000;
+
+  
 
    /* ==== FONT WEIGHT ==== */
    --font-regular: 400;
@@ -79,6 +83,7 @@ html {
   border: 1px dashed white;
   
 }
+
 .button:hover{
   background-color: var(--site-button-hover);
   color: var(--title-color);
@@ -114,6 +119,10 @@ img {
   height: auto;
 }
 
+.section{
+  padding: 1rem 3rem 1rem 2rem;
+  margin-block: 5rem 2.5rem;
+}
 .container_alt{
   max-width: 1320px;
   margin-inline: 1.5rem;
@@ -342,4 +351,132 @@ nav ul .nav-item .nav-link:hover{
     padding: 10px;
   }
   
+}
+
+/* about section */
+.about_container{
+  text-align: left;
+ 
+}
+.about_container_inner{
+  padding: 16px;
+}
+.about_image{
+  margin-bottom: 3rem;
+}
+.about_text{
+  margin-bottom: 3rem;
+ padding-left: 5rem;
+ 
+}
+.about_text h6{
+  padding-bottom: 16px;
+  font-family: var(--heading-font);
+  color: var(--body-font-color);
+}
+.about_text h1{
+  padding-bottom: 16px;
+  color: var(--title-color);
+  margin: 0px 0px 30px 0px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: var(--heading-1-lineheight);
+}
+.about_text .about_description{
+  font-family: var(--body-font);
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+
+}
+.row .tiny-quotes_container h6{
+  line-height: var(--body-line-height);
+}
+@media screen and (max-width:585px) {
+  .about_text h1{
+    padding-bottom: 16px;
+    color: var(--title-color);
+    margin: 0px 0px 30px 0px;
+   font-size: 36px;
+    font-weight: 700;
+    line-height: var(--heading-1-lineheight);
+  }
+  .about_text .check-availibility_button input{
+    /* font-size: var(--body-font-size); */
+    padding: 16px;
+  }
+  .about_text{
+    text-align: center;
+    padding:1rem;
+  }
+
+  
+}
+
+/* facilities section */
+.facilities_container{
+  text-align: left;
+  max-height: 600px;
+  
+}
+.facilities_container_inner{
+  padding: 16px;
+}
+.facilities_text{
+  margin-bottom: 3rem;
+  padding-right: 5rem;
+}
+.facilities_text h1{
+  padding-bottom: 16px;
+  color: var(--title-color);
+  margin: 0px 0px 30px 0px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: var(--heading-1-lineheight);
+}
+.facilities_text .facilities_description{
+  font-family: var(--body-font);
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+  padding-bottom: 3rem;
+}
+
+.carousel-item img{
+  width: 60%;
+  height:60%;
+}
+.carousel-item img{
+  margin: 0 auto;
+}
+.carousel-caption{
+  background-color: #fff;
+  border: 1px solid var(--site-border-color);
+  border-radius: 13px;
+}
+@media screen and (max-width:585px) {
+  .facilities_container_inner{
+   margin: 16px;
+  }
+  .facilities_text h1{
+    padding-bottom: 16px;
+    color: var(--title-color);
+    margin: 0px 0px 30px 0px;
+   font-size: 36px;
+    font-weight: 700;
+    line-height: var(--heading-1-lineheight);
+  }
+  .facilities_text .check-availibility_button input{
+    /* font-size: var(--body-font-size); */
+    padding: 16px;
+  }
+  .facilities_text{
+    text-align: center;
+    
+    padding:1rem;
+    
+  }
+  .facilities_text .facilities_description{
+   text-align: center;
+   padding: 16px;
+    
+  }
 }
