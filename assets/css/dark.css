@@ -16,15 +16,15 @@ html {
 /* ====== VERIABLE THAT ARE GOING TO BE RE-USED ===== */
 :root{
   --site-background-color:#2c2c2c;
-  --site-button-color:#453220;
+  --site-button-color:#bfbfbf;
   --site-border-color:#eeeeee;
-  --site-accent-color:#363636;
+  --site-accent-color:#565656;
   --site-button-hover:#835d0f;
   --title-color:#ffffff;
   --text-color-white:#000000;
   --body-font-color:#656565;
   --section-color:#383838;
-  --button-text-color:#ffffff;
+  --button-text-color:#161616;
   --section-alt-color:#e0e0e0;
   --nav-color:#242424;
   --nav-font-color:#ffffff;
