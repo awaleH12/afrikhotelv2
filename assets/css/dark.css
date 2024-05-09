@@ -675,7 +675,7 @@ nav ul .nav-item .nav-link:hover{
 .posts_text p{
   font-family: var(--body-font);
   font-size: var(--body-font-size);
-  color: var(--body-font-color);
+  color: var(--section-alt-color);
   padding: 16px;
 }
 .posts_container_inner{
