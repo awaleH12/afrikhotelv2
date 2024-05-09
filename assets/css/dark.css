@@ -554,10 +554,11 @@ nav ul .nav-item .nav-link:hover{
   gap: 20px; 
   row-gap: 2rem;
   text-align: left;
-  background: #000;
+  background: #4f4f4f;
+  padding: 16px;
 }
 .card{
-  background-color: var(--body-font-color);
+  background-color:#847070;
   color: #fff;
 }
 .card-body_top {
