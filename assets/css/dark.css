@@ -456,7 +456,7 @@ nav ul .nav-item .nav-link:hover{
   margin: 0 auto;
 }
 .carousel-caption{
-  background-color: #fff;
+  background-color: #525252;
   border: 1px solid var(--site-border-color);
   border-radius: 13px;
 }
@@ -554,6 +554,11 @@ nav ul .nav-item .nav-link:hover{
   gap: 20px; 
   row-gap: 2rem;
   text-align: left;
+  background: #000;
+}
+.card{
+  background-color: var(--body-font-color);
+  color: #fff;
 }
 .card-body_top {
   padding: 32px 32px 16px;
