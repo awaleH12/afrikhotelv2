@@ -14,6 +14,10 @@
   
    <!--Import Google Icon Font-->
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- Flatpickr cdn-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+   <!-- date picker -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
   <title>Afrik Hotel and Restaurant</title>
   <!-- site favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
@@ -111,10 +115,15 @@
             <div class="check-in-check-out-title">
               <h5>CHECK-IN, CHECK-OUT <span>*</span></h5>
             </div>
-            <div class="date_from_to">
-              <span class="from_date">From: <input type="date"></span>
-              <span class="to_date">To: <input type="date"></span>
-            </div>
+            
+           
+
+            <div id="reportrange" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%">
+              <i class="fa fa-calendar"></i>&nbsp;
+              <span></span> <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          
+       
           </div>
           
           <div class="dropdown">
@@ -448,5 +457,39 @@
   <script src="assets/js/index.js"></script>
   <!-- jquery CDN -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- flatpickr -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  
+  <script>
+   flatpickr("#date_from", { minDate: "today",  altInput: true,
+    altFormat: "F j, Y",
+    dateFormat: "Y-m-d",});
+   flatpickr("#date_to", { minDate: "today",  altInput: true,
+    altFormat: "F j, Y",
+    dateFormat: "Y-m-d",});
+      // datepicker
+      $(function() {
+
+      var start = moment();
+      var end =  moment().add(1, 'days');
+
+      function cb(start, end) {
+          $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+      }
+
+      $('#reportrange').daterangepicker({
+          startDate: start,
+          endDate: end,
+        
+      }, cb);
+
+      cb(start, end);
+
+      });
+  </script>
 </body>
 </html>
