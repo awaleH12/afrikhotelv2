@@ -182,7 +182,7 @@ nav ul .nav-item .nav-link:hover{
 .nav-call-sect h5{
   font-family: var(--heading-font);
   font-size: var(--heading-5-size);
-  color: var(--nav-font-color);
+  color: var(--text-color-white);
   padding-right: 10px;
 }
 .nav-call-sect span{
@@ -200,6 +200,16 @@ nav ul .nav-item .nav-link:hover{
     display: none;
   }
 }
+.nav-call-sect.scrolled h5 {
+  color: #000; /* Change to your desired color */
+}
+.nav-call-sect.scrolled span{
+  color: #000; /* Change to your desired color */
+}
+
+
+
+
 
 /* theme toggle icon */
 .toggle_icon{

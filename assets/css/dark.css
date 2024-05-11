@@ -184,11 +184,11 @@ nav ul .nav-item .nav-link:hover{
 .nav-call-sect h5{
   font-family: var(--heading-font);
   font-size: var(--heading-5-size);
-  color: var(--nav-font-color);
+  color: var(--title-color);
   padding-right: 10px;
 }
 .nav-call-sect span{
-  color: var(--text-color-white);
+  color: var(--title-color);
 }
 .Top_bar_book_now_button{
   background-color: var(--site-button-color);
@@ -202,6 +202,13 @@ nav ul .nav-item .nav-link:hover{
     display: none;
   }
 }
+.nav-call-sect.scrolled h5 {
+  color: #fff; /* Change to your desired color */
+}
+.nav-call-sect.scrolled span{
+  color: #fff; /* Change to your desired color */
+}
+
 
 /* theme toggle icon */
 .toggle_icon{
@@ -247,7 +254,7 @@ nav ul .nav-item .nav-link:hover{
   
 }
 .site_heading_text a{
-  color: var(--text-color-white);
+  color: var(--nav-font-color);
   padding-top: 20px;
 
 }

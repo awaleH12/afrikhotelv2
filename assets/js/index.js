@@ -22,3 +22,20 @@ icon.onclick = function(){
  
 }
 
+// this function will turn the text of this div to black when the screen scroll reaches 800px
+window.addEventListener('scroll', function() {
+  var scrollPosition = window.scrollY;
+  var navCallSect = document.querySelector('.nav-call-sect');
+  
+  if (scrollPosition >= 800) {
+    navCallSect.classList.add('scrolled');
+  } else {
+    navCallSect.classList.remove('scrolled');
+  }
+});
+
+// flatpickr date picker jqeury code
+
+
+// A $( document ).ready() block.
+
